@@ -31,7 +31,7 @@ function buildPartyEmbed(run, requirements, members) {
     return embed;
   }
 
-  embed.setFooter({ text: 'see u in next party' });
+  embed.setFooter({ text: 'Klik tombol role di bawah untuk join (jika ada)' });
 
   const lines = [];
   for (const req of requirements) {
