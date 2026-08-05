@@ -69,10 +69,10 @@ function buildSalaryEmbed({ run, accounting, members, lootEntries, goldDrops, st
   // --- Summary ---
   const t = calcResult.totals;
   const summaryLines = [
-    `Total: **${formatGold(t.grossPool)}**`,
-    `Dikurangi sealstamp: **${formatGold(t.totalStampDeduction)}**`,
+    `Pool: **${formatGold(t.grossPool)}**`,
+    `sealstamp: **${formatGold(t.totalStampDeduction)}**`,
     `Total fee (semua): **${formatGold(t.totalFee)}**`,
-    `Yang dibagikan: **${formatGold(t.totalNetPayable)}**`,
+    `Yang dibagikan(termasuk sealstamp): **${formatGold(t.totalNetPayable)}**`,
     '· Fee 0.3% dipotong dari gaji kotor PER orang (bukan dipotong rata) — lihat di Status Gaji.',
     calcResult.isFinal ? '· Semua item sudah laku (angka final)' : '· Masih ada item belum laku (angka estimasi).',
   ];
