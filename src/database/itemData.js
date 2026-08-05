@@ -118,33 +118,33 @@ module.exports = [
   {
     "raid_type": "GDN",
     "tier": "Classic",
-    "category": "Armor",
+    "category": "Weapon",
     "class": "Warrior",
-    "item_name": "GDN Armor (Warrior@Axe)",
+    "item_name": "GDN Weapon (Warrior@Axe)",
     "stamp_cost": 3
   },
   {
     "raid_type": "GDN",
     "tier": "Classic",
-    "category": "Armor",
+    "category": "Weapon",
     "class": "Warrior",
-    "item_name": "GDN Armor (Warrior@Hammer)",
+    "item_name": "GDN Weapon (Warrior@Hammer)",
     "stamp_cost": 3
   },
   {
     "raid_type": "GDN",
     "tier": "Classic",
-    "category": "Armor",
+    "category": "Weapon",
     "class": "Warrior",
-    "item_name": "GDN Armor (Warrior@Sword)",
+    "item_name": "GDN Weapon (Warrior@Sword)",
     "stamp_cost": 3
   },
   {
     "raid_type": "GDN",
     "tier": "Classic",
-    "category": "Armor",
+    "category": "Weapon",
     "class": "Warrior",
-    "item_name": "GDN Armor (Warrior@Gauntlet)",
+    "item_name": "GDN Weapon (Warrior@Gauntlet)",
     "stamp_cost": 3
   },
   {
@@ -190,33 +190,33 @@ module.exports = [
   {
     "raid_type": "GDN",
     "tier": "Classic",
-    "category": "Armor",
+    "category": "Weapon",
     "class": "Cleric",
-    "item_name": "GDN Armor (Cleric@Flail)",
+    "item_name": "GDN Weapon (Cleric@Flail)",
     "stamp_cost": 3
   },
   {
     "raid_type": "GDN",
     "tier": "Classic",
-    "category": "Armor",
+    "category": "Weapon",
     "class": "Cleric",
-    "item_name": "GDN Armor (Cleric@Mace)",
+    "item_name": "GDN Weapon (Cleric@Mace)",
     "stamp_cost": 3
   },
   {
     "raid_type": "GDN",
     "tier": "Classic",
-    "category": "Armor",
+    "category": "Weapon",
     "class": "Cleric",
-    "item_name": "GDN Armor (Cleric@Wand)",
+    "item_name": "GDN Weapon (Cleric@Wand)",
     "stamp_cost": 3
   },
   {
     "raid_type": "GDN",
     "tier": "Classic",
-    "category": "Armor",
+    "category": "Weapon",
     "class": "Cleric",
-    "item_name": "GDN Armor (Cleric@Shield)",
+    "item_name": "GDN Weapon (Cleric@Shield)",
     "stamp_cost": 3
   },
   {
@@ -262,33 +262,33 @@ module.exports = [
   {
     "raid_type": "GDN",
     "tier": "Classic",
-    "category": "Armor",
+    "category": "Weapon",
     "class": "Arcer",
-    "item_name": "GDN Armor (Arcer@Shortbow)",
+    "item_name": "GDN Weapon (Arcer@Shortbow)",
     "stamp_cost": 3
   },
   {
     "raid_type": "GDN",
     "tier": "Classic",
-    "category": "Armor",
+    "category": "Weapon",
     "class": "Arcer",
-    "item_name": "GDN Armor (Arcer@Longbow)",
+    "item_name": "GDN Weapon (Arcer@Longbow)",
     "stamp_cost": 3
   },
   {
     "raid_type": "GDN",
     "tier": "Classic",
-    "category": "Armor",
+    "category": "Weapon",
     "class": "Arcer",
-    "item_name": "GDN Armor (Arcer@Crossbow)",
+    "item_name": "GDN Weapon (Arcer@Crossbow)",
     "stamp_cost": 3
   },
   {
     "raid_type": "GDN",
     "tier": "Classic",
-    "category": "Armor",
+    "category": "Weapon",
     "class": "Arcer",
-    "item_name": "GDN Armor (Arcer@Quiver)",
+    "item_name": "GDN Weapon (Arcer@Quiver)",
     "stamp_cost": 3
   },
   {
@@ -334,33 +334,33 @@ module.exports = [
   {
     "raid_type": "GDN",
     "tier": "Classic",
-    "category": "Armor",
+    "category": "Weapon",
     "class": "Sorceress",
-    "item_name": "GDN Armor (Sorceress@Spellbook)",
+    "item_name": "GDN Weapon (Sorceress@Spellbook)",
     "stamp_cost": 3
   },
   {
     "raid_type": "GDN",
     "tier": "Classic",
-    "category": "Armor",
+    "category": "Weapon",
     "class": "Sorceress",
-    "item_name": "GDN Armor (Sorceress@CrystalBall)",
+    "item_name": "GDN Weapon (Sorceress@CrystalBall)",
     "stamp_cost": 3
   },
   {
     "raid_type": "GDN",
     "tier": "Classic",
-    "category": "Armor",
+    "category": "Weapon",
     "class": "Sorceress",
-    "item_name": "GDN Armor (Sorceress@VoodooDoll)",
+    "item_name": "GDN Weapon (Sorceress@VoodooDoll)",
     "stamp_cost": 3
   },
   {
     "raid_type": "GDN",
     "tier": "Classic",
-    "category": "Armor",
+    "category": "Weapon",
     "class": "Sorceress",
-    "item_name": "GDN Armor (Sorceress@Staff)",
+    "item_name": "GDN Weapon (Sorceress@Staff)",
     "stamp_cost": 3
   },
   {
@@ -406,25 +406,25 @@ module.exports = [
   {
     "raid_type": "GDN",
     "tier": "Classic",
-    "category": "Armor",
+    "category": "Weapon",
     "class": "Academic",
-    "item_name": "GDN Armor (Academic@Cannon)",
+    "item_name": "GDN Weapon (Academic@Cannon)",
     "stamp_cost": 3
   },
   {
     "raid_type": "GDN",
     "tier": "Classic",
-    "category": "Armor",
+    "category": "Weapon",
     "class": "Academic",
-    "item_name": "GDN Armor (Academic@Kabala)",
+    "item_name": "GDN Weapon (Academic@Kabala)",
     "stamp_cost": 3
   },
   {
     "raid_type": "GDN",
     "tier": "Classic",
-    "category": "Armor",
+    "category": "Weapon",
     "class": "Academic",
-    "item_name": "GDN Armor (Academic@Loop)",
+    "item_name": "GDN Weapon (Academic@Loop)",
     "stamp_cost": 3
   },
   {
@@ -470,25 +470,89 @@ module.exports = [
   {
     "raid_type": "GDN",
     "tier": "Classic",
-    "category": "Armor",
+    "category": "Weapon",
     "class": "Kali",
-    "item_name": "GDN Armor (Kali@Fan)",
+    "item_name": "GDN Weapon (Kali@Fan)",
+    "stamp_cost": 3
+  },
+  {
+    "raid_type": "GDN",
+    "tier": "Classic",
+    "category": "Weapon",
+    "class": "Kali",
+    "item_name": "GDN Weapon (Kali@Chakram)",
+    "stamp_cost": 3
+  },
+  {
+    "raid_type": "GDN",
+    "tier": "Classic",
+    "category": "Weapon",
+    "class": "Kali",
+    "item_name": "GDN Weapon (Kali@Charm)",
     "stamp_cost": 3
   },
   {
     "raid_type": "GDN",
     "tier": "Classic",
     "category": "Armor",
-    "class": "Kali",
-    "item_name": "GDN Armor (Kali@Chakram)",
-    "stamp_cost": 3
+    "class": "Assassin",
+    "item_name": "GDN Armor (Assassin@Mask)",
+    "stamp_cost": 1
   },
   {
     "raid_type": "GDN",
     "tier": "Classic",
     "category": "Armor",
-    "class": "Kali",
-    "item_name": "GDN Armor (Kali@Charm)",
+    "class": "Assassin",
+    "item_name": "GDN Armor (Assassin@Vest)",
+    "stamp_cost": 1
+  },
+  {
+    "raid_type": "GDN",
+    "tier": "Classic",
+    "category": "Armor",
+    "class": "Assassin",
+    "item_name": "GDN Armor (Assassin@Greave)",
+    "stamp_cost": 1
+  },
+  {
+    "raid_type": "GDN",
+    "tier": "Classic",
+    "category": "Armor",
+    "class": "Assassin",
+    "item_name": "GDN Armor (Assassin@Grip)",
+    "stamp_cost": 1
+  },
+  {
+    "raid_type": "GDN",
+    "tier": "Classic",
+    "category": "Armor",
+    "class": "Assassin",
+    "item_name": "GDN Armor (Assassin@Walker)",
+    "stamp_cost": 1
+  },
+  {
+    "raid_type": "GDN",
+    "tier": "Classic",
+    "category": "Weapon",
+    "class": "Assassin",
+    "item_name": "GDN Weapon (Assassin@Scimitar)",
+    "stamp_cost": 3
+  },
+  {
+    "raid_type": "GDN",
+    "tier": "Classic",
+    "category": "Weapon",
+    "class": "Assassin",
+    "item_name": "GDN Weapon (Assassin@Dagger)",
+    "stamp_cost": 3
+  },
+  {
+    "raid_type": "GDN",
+    "tier": "Classic",
+    "category": "Weapon",
+    "class": "Assassin",
+    "item_name": "GDN Weapon (Assassin@Crook)",
     "stamp_cost": 3
   },
   {
@@ -600,7 +664,7 @@ module.exports = [
     "tier": "HC",
     "category": "Material",
     "class": null,
-    "item_name": "GDN Legend Thron Destroy",
+    "item_name": "GDN Legend Thorns Destroy",
     "stamp_cost": 8
   },
   {
@@ -726,33 +790,33 @@ module.exports = [
   {
     "raid_type": "DDN",
     "tier": "Classic",
-    "category": "Armor",
+    "category": "Weapon",
     "class": "Warrior",
-    "item_name": "DDN Armor (Warrior@Axe)",
+    "item_name": "DDN Weapon (Warrior@Axe)",
     "stamp_cost": 4
   },
   {
     "raid_type": "DDN",
     "tier": "Classic",
-    "category": "Armor",
+    "category": "Weapon",
     "class": "Warrior",
-    "item_name": "DDN Armor (Warrior@Hammer)",
+    "item_name": "DDN Weapon (Warrior@Hammer)",
     "stamp_cost": 4
   },
   {
     "raid_type": "DDN",
     "tier": "Classic",
-    "category": "Armor",
+    "category": "Weapon",
     "class": "Warrior",
-    "item_name": "DDN Armor (Warrior@Sword)",
+    "item_name": "DDN Weapon (Warrior@Sword)",
     "stamp_cost": 4
   },
   {
     "raid_type": "DDN",
     "tier": "Classic",
-    "category": "Armor",
+    "category": "Weapon",
     "class": "Warrior",
-    "item_name": "DDN Armor (Warrior@Gauntlet)",
+    "item_name": "DDN Weapon (Warrior@Gauntlet)",
     "stamp_cost": 4
   },
   {
@@ -798,33 +862,33 @@ module.exports = [
   {
     "raid_type": "DDN",
     "tier": "Classic",
-    "category": "Armor",
+    "category": "Weapon",
     "class": "Cleric",
-    "item_name": "DDN Armor (Cleric@Flail)",
+    "item_name": "DDN Weapon (Cleric@Flail)",
     "stamp_cost": 4
   },
   {
     "raid_type": "DDN",
     "tier": "Classic",
-    "category": "Armor",
+    "category": "Weapon",
     "class": "Cleric",
-    "item_name": "DDN Armor (Cleric@Mace)",
+    "item_name": "DDN Weapon (Cleric@Mace)",
     "stamp_cost": 4
   },
   {
     "raid_type": "DDN",
     "tier": "Classic",
-    "category": "Armor",
+    "category": "Weapon",
     "class": "Cleric",
-    "item_name": "DDN Armor (Cleric@Wand)",
+    "item_name": "DDN Weapon (Cleric@Wand)",
     "stamp_cost": 4
   },
   {
     "raid_type": "DDN",
     "tier": "Classic",
-    "category": "Armor",
+    "category": "Weapon",
     "class": "Cleric",
-    "item_name": "DDN Armor (Cleric@Shield)",
+    "item_name": "DDN Weapon (Cleric@Shield)",
     "stamp_cost": 4
   },
   {
@@ -870,33 +934,33 @@ module.exports = [
   {
     "raid_type": "DDN",
     "tier": "Classic",
-    "category": "Armor",
+    "category": "Weapon",
     "class": "Arcer",
-    "item_name": "DDN Armor (Arcer@Shortbow)",
+    "item_name": "DDN Weapon (Arcer@Shortbow)",
     "stamp_cost": 4
   },
   {
     "raid_type": "DDN",
     "tier": "Classic",
-    "category": "Armor",
+    "category": "Weapon",
     "class": "Arcer",
-    "item_name": "DDN Armor (Arcer@Longbow)",
+    "item_name": "DDN Weapon (Arcer@Longbow)",
     "stamp_cost": 4
   },
   {
     "raid_type": "DDN",
     "tier": "Classic",
-    "category": "Armor",
+    "category": "Weapon",
     "class": "Arcer",
-    "item_name": "DDN Armor (Arcer@Crossbow)",
+    "item_name": "DDN Weapon (Arcer@Crossbow)",
     "stamp_cost": 4
   },
   {
     "raid_type": "DDN",
     "tier": "Classic",
-    "category": "Armor",
+    "category": "Weapon",
     "class": "Arcer",
-    "item_name": "DDN Armor (Arcer@Quiver)",
+    "item_name": "DDN Weapon (Arcer@Quiver)",
     "stamp_cost": 4
   },
   {
@@ -942,33 +1006,33 @@ module.exports = [
   {
     "raid_type": "DDN",
     "tier": "Classic",
-    "category": "Armor",
+    "category": "Weapon",
     "class": "Sorceress",
-    "item_name": "DDN Armor (Sorceress@Spellbook)",
+    "item_name": "DDN Weapon (Sorceress@Spellbook)",
     "stamp_cost": 4
   },
   {
     "raid_type": "DDN",
     "tier": "Classic",
-    "category": "Armor",
+    "category": "Weapon",
     "class": "Sorceress",
-    "item_name": "DDN Armor (Sorceress@CrystalBall)",
+    "item_name": "DDN Weapon (Sorceress@CrystalBall)",
     "stamp_cost": 4
   },
   {
     "raid_type": "DDN",
     "tier": "Classic",
-    "category": "Armor",
+    "category": "Weapon",
     "class": "Sorceress",
-    "item_name": "DDN Armor (Sorceress@VoodooDoll)",
+    "item_name": "DDN Weapon (Sorceress@VoodooDoll)",
     "stamp_cost": 4
   },
   {
     "raid_type": "DDN",
     "tier": "Classic",
-    "category": "Armor",
+    "category": "Weapon",
     "class": "Sorceress",
-    "item_name": "DDN Armor (Sorceress@Staff)",
+    "item_name": "DDN Weapon (Sorceress@Staff)",
     "stamp_cost": 4
   },
   {
@@ -1014,25 +1078,25 @@ module.exports = [
   {
     "raid_type": "DDN",
     "tier": "Classic",
-    "category": "Armor",
+    "category": "Weapon",
     "class": "Academic",
-    "item_name": "DDN Armor (Academic@Cannon)",
+    "item_name": "DDN Weapon (Academic@Cannon)",
     "stamp_cost": 4
   },
   {
     "raid_type": "DDN",
     "tier": "Classic",
-    "category": "Armor",
+    "category": "Weapon",
     "class": "Academic",
-    "item_name": "DDN Armor (Academic@Kabala)",
+    "item_name": "DDN Weapon (Academic@Kabala)",
     "stamp_cost": 4
   },
   {
     "raid_type": "DDN",
     "tier": "Classic",
-    "category": "Armor",
+    "category": "Weapon",
     "class": "Academic",
-    "item_name": "DDN Armor (Academic@Loop)",
+    "item_name": "DDN Weapon (Academic@Loop)",
     "stamp_cost": 4
   },
   {
@@ -1078,25 +1142,89 @@ module.exports = [
   {
     "raid_type": "DDN",
     "tier": "Classic",
-    "category": "Armor",
+    "category": "Weapon",
     "class": "Kali",
-    "item_name": "DDN Armor (Kali@Fan)",
+    "item_name": "DDN Weapon (Kali@Fan)",
+    "stamp_cost": 4
+  },
+  {
+    "raid_type": "DDN",
+    "tier": "Classic",
+    "category": "Weapon",
+    "class": "Kali",
+    "item_name": "DDN Weapon (Kali@Chakram)",
+    "stamp_cost": 4
+  },
+  {
+    "raid_type": "DDN",
+    "tier": "Classic",
+    "category": "Weapon",
+    "class": "Kali",
+    "item_name": "DDN Weapon (Kali@Charm)",
     "stamp_cost": 4
   },
   {
     "raid_type": "DDN",
     "tier": "Classic",
     "category": "Armor",
-    "class": "Kali",
-    "item_name": "DDN Armor (Kali@Chakram)",
-    "stamp_cost": 4
+    "class": "Assassin",
+    "item_name": "DDN Armor (Assassin@Mask)",
+    "stamp_cost": 2
   },
   {
     "raid_type": "DDN",
     "tier": "Classic",
     "category": "Armor",
-    "class": "Kali",
-    "item_name": "DDN Armor (Kali@Charm)",
+    "class": "Assassin",
+    "item_name": "DDN Armor (Assassin@Vest)",
+    "stamp_cost": 2
+  },
+  {
+    "raid_type": "DDN",
+    "tier": "Classic",
+    "category": "Armor",
+    "class": "Assassin",
+    "item_name": "DDN Armor (Assassin@Greave)",
+    "stamp_cost": 2
+  },
+  {
+    "raid_type": "DDN",
+    "tier": "Classic",
+    "category": "Armor",
+    "class": "Assassin",
+    "item_name": "DDN Armor (Assassin@Grip)",
+    "stamp_cost": 2
+  },
+  {
+    "raid_type": "DDN",
+    "tier": "Classic",
+    "category": "Armor",
+    "class": "Assassin",
+    "item_name": "DDN Armor (Assassin@Walker)",
+    "stamp_cost": 2
+  },
+  {
+    "raid_type": "DDN",
+    "tier": "Classic",
+    "category": "Weapon",
+    "class": "Assassin",
+    "item_name": "DDN Weapon (Assassin@Scimitar)",
+    "stamp_cost": 4
+  },
+  {
+    "raid_type": "DDN",
+    "tier": "Classic",
+    "category": "Weapon",
+    "class": "Assassin",
+    "item_name": "DDN Weapon (Assassin@Dagger)",
+    "stamp_cost": 4
+  },
+  {
+    "raid_type": "DDN",
+    "tier": "Classic",
+    "category": "Weapon",
+    "class": "Assassin",
+    "item_name": "DDN Weapon (Assassin@Crook)",
     "stamp_cost": 4
   },
   {
@@ -1233,7 +1361,7 @@ module.exports = [
     "category": "Material",
     "class": null,
     "item_name": "DDN Research Records",
-    "stamp_cost": 4
+    "stamp_cost": 3
   },
   {
     "raid_type": "DDN",

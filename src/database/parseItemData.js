@@ -20,6 +20,9 @@ const HEADER_RE = /^(GDN|DDN)\s+(CLASIC|HC)$/i;
 // Baris Armor: "-  GDN Armor (Warrior@Head) x 1"
 const ARMOR_RE = /^-\s*(GDN|DDN)\s+Armor\s*\(([A-Za-z]+)@([A-Za-z ]+)\)\s*[xX]\s*(\d+)$/;
 
+// Baris Weapon: "-  GDN Weapon (Warrior@Axe) x 3"
+const WEAPON_RE = /^-\s*(GDN|DDN)\s+Weapon\s*\(([A-Za-z]+)@([A-Za-z ]+)\)\s*[xX]\s*(\d+)$/;
+
 // Baris Accessory: "-  GDN Unique Accessory (Earrings@STR AGI) X 20" atau "GDN Legend Accessory (...) X 34"
 const ACCESSORY_RE = /^-\s*(GDN|DDN)\s+(Unique|Legend)\s+Accessory\s*\(([A-Za-z]+)@([A-Za-z ]+)\)\s*[xX]\s*(\d+)$/;
 
@@ -52,6 +55,20 @@ for (const line of lines) {
       category: 'Armor',
       class: klass,
       item_name: `${raid.toUpperCase()} Armor (${klass}@${slot.trim()})`,
+      stamp_cost: Number(stamp),
+    });
+    continue;
+  }
+
+  m = line.match(WEAPON_RE);
+  if (m) {
+    const [, raid, klass, slot, stamp] = m;
+    items.push({
+      raid_type: raid.toUpperCase(),
+      tier: currentTier,
+      category: 'Weapon',
+      class: klass,
+      item_name: `${raid.toUpperCase()} Weapon (${klass}@${slot.trim()})`,
       stamp_cost: Number(stamp),
     });
     continue;

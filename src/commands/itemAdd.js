@@ -18,6 +18,7 @@ module.exports = {
             .addChoices(
               { name: 'Accessory', value: 'Accessory' },
               { name: 'Armor', value: 'Armor' },
+              { name: 'Weapon', value: 'Weapon' },
               { name: 'Material', value: 'Material' }
             )
         )

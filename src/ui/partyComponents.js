@@ -9,10 +9,15 @@ const config = require('../config');
 const isLocked = (run) => run.status !== 'open';
 
 function buildPartyRows(run, requirements = [], members = []) {
+  if (run.status === 'cancelled') {
+    return [];
+  }
+
   const roleButtons = config.roleRequirements.map((r) => {
     const req = requirements.find((x) => x.role_code === r.code);
     const roleCount = members.filter((m) => m.role_code === r.code).length;
     const roleFull = req ? roleCount >= req.slots : false;
+
     return new ButtonBuilder()
       .setCustomId(`party:role:${run.id}:${r.code}`)
       .setLabel(r.label)

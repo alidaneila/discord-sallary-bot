@@ -30,10 +30,10 @@ module.exports = {
   // `emoji` cuma dipakai buat tombol, embed party sengaja polos tanpa emoji.
   roleRequirements: [
     { code: 'FU', label: 'FU', emoji: '🔴', slots: 2 },
-    { code: 'PR', label: 'PR', emoji: '🏹', slots: 1 },
+    { code: 'HEALER', label: 'HEALER', emoji: '🏹', slots: 3, subroles: ['Priest', 'Physician', 'Light Fury'] },
     { code: 'MC', label: 'MC', emoji: '🛡️', slots: 1 },
     { code: 'SM', label: 'SM', emoji: '💥', slots: 1 },
-    { code: 'MT', label: 'MT', emoji: '🌿', slots: 1 },
+    { code: 'MT', label: 'MT', emoji: '🌿', slots: 2, subroles: ['Paladin', 'Destroyer'] },
     { code: 'ICE_STACKING', label: 'ICE STACKING', emoji: '❄️', slots: 1, subroles: ['Adept', 'Elestra'] },
     { code: 'ARCHER', label: 'ARCHER', emoji: '🎯', slots: 2 },
     {
@@ -41,7 +41,7 @@ module.exports = {
       label: 'DPS',
       emoji: '⚔️',
       slots: 3,
-      subroles: ['Sniper', 'Dancer', 'Dark Avenger', 'Crusader', 'Gear Master', 'Artillery', 'Saleana'],
+      subroles: ['Assassin', 'Artillery', 'Crusader', 'Dancer', 'Dark Avenger', 'Gear Master', 'Inquisitor', 'Sniper', 'Saleana', 'Shooting Star', 'Screamer'],
     },
   ],
 };

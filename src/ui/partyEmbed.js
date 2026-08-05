@@ -24,8 +24,14 @@ function buildPartyEmbed(run, requirements, members) {
   const embed = new EmbedBuilder()
     .setTitle(run.title)
     .setColor(STATUS_COLOR[run.status] || 0x95a5a6)
-    .setFooter({ text: 'Klik tombol role di bawah untuk join' })
     .setTimestamp(new Date(run.created_at));
+
+  if (run.status === 'cancelled') {
+    embed.setDescription('🚫 Party run ini sudah dibatalkan.');
+    return embed;
+  }
+
+  embed.setFooter({ text: 'see u in next party' });
 
   const lines = [];
   for (const req of requirements) {

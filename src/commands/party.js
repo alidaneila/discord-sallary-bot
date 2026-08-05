@@ -26,13 +26,16 @@ module.exports = {
     const embed = buildPartyEmbed(run, requirements, members);
     const components = buildPartyRows(run, requirements, members);
 
-    // Otomatis ping @here begitu party dibuat, isinya title-nya.
-    const message = await interaction.reply({
+    // Acknowledge interaction-nya secara private dulu (wajib, biar gak "This interaction failed")
+    await interaction.reply({ content: '✅ Party berhasil dibuat.', ephemeral: true });
+
+    // Kirim panel + ping @here sebagai PESAN BIASA (bukan interaction reply),
+    // biar gak ada label "... used /createparty" di atasnya.
+    const message = await interaction.channel.send({
       content: `@here ${title}`,
       embeds: [embed],
       components,
       allowedMentions: { parse: ['everyone'] },
-      fetchReply: true,
     });
     partyService.setPanelMessageId(run.id, message.id);
   },

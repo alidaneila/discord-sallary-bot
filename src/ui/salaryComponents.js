@@ -6,7 +6,7 @@ const {
 } = require('discord.js');
 
 function buildSalaryRows(runId, { mutationLocked = false, finalized = false } = {}) {
-  if (finalized) return []; // Close Panel = ilangin semua tombol, bukan cuma dinonaktifin
+  // if (finalized) return []; // Close Panel = ilangin semua tombol, bukan cuma dinonaktifin
 
   const row1 = new ActionRowBuilder().addComponents(
     new ButtonBuilder()
@@ -44,7 +44,7 @@ function buildSalaryRows(runId, { mutationLocked = false, finalized = false } = 
       .setDisabled(mutationLocked),
     new ButtonBuilder()
       .setCustomId(`salary:excludeselect:${runId}`)
-      .setLabel('Toggle Exclude dari Gaji')
+      .setLabel('keluarin dari Gaji')
       .setEmoji('🚫')
       .setStyle(ButtonStyle.Secondary)
       .setDisabled(mutationLocked),
@@ -69,12 +69,12 @@ function buildSalaryRows(runId, { mutationLocked = false, finalized = false } = 
       .setEmoji('🧮')
       .setStyle(ButtonStyle.Primary)
       .setDisabled(finalized),
-    new ButtonBuilder()
-      .setCustomId(`salary:close:${runId}`)
-      .setLabel('Close Panel')
-      .setEmoji('🔒')
-      .setStyle(ButtonStyle.Danger)
-      .setDisabled(finalized)
+    // new ButtonBuilder()
+    //   .setCustomId(`salary:close:${runId}`)
+    //   .setLabel('Close Panel')
+    //   .setEmoji('🔒')
+    //   .setStyle(ButtonStyle.Danger)
+    //   .setDisabled(finalized)
   );
 
   return [row1, row2, row3];

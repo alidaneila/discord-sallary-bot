@@ -367,7 +367,7 @@ async function handleSalaryButton(interaction, action, runId, extra) {
     case 'setaccounting': {
       const members = await resolveDisplayNames(
         interaction.guild,
-        partyService.getActiveMembers(runId).filter((m) => m.user_id !== run.host_id)
+        partyService.getActiveMembers(runId)
       );
       if (!members.length) {
         return interaction.reply({ content: 'Nggak ada member lain buat ditunjuk jadi accounting.', ephemeral: true });
@@ -571,6 +571,20 @@ async function handleModal(interaction) {
       const accountingUserId = parts[3];
       const ign = interaction.fields.getTextInputValue('ign');
       salaryService.setAccounting(runId, accountingUserId, ign);
+
+      // Ganti judul thread jadi "<judul asli> - <IGN acct>"
+      const salaryThread = salaryService.getSalaryThreadByRunId(runId);
+      if (salaryThread?.thread_id) {
+        try {
+          const thread = await interaction.client.channels.fetch(salaryThread.thread_id);
+          const paidPrefix = thread.name.startsWith('💰') ? '💰 ' : '';
+          const newName = `${paidPrefix}${run.title} - ${ign}`.slice(0, 100);
+          await thread.setName(newName);
+        } catch (err) {
+          console.warn('[accountingmodal] Gagal ubah nama thread:', err.message);
+        }
+      }
+
       await interaction.reply({
         content: `✅ <@${accountingUserId}> (${ign}) ditunjuk jadi accounting.`,
         ephemeral: true,
@@ -586,7 +600,7 @@ async function handleModal(interaction) {
     const mutationModals = ['addgoldmodal', 'stamploanmodal', 'pricemodal'];
     if (mutationModals.includes(action) && salaryService.isMutationLocked(runId)) {
       return interaction.reply({
-        content: '🔒 Sudah ada yang dibayar / panel ditutup — item, gold, dan stamp tidak bisa diubah lagi.',
+        content: '🔒 Sudah ada yang dibayar — item, gold, dan stamp tidak bisa diubah lagi.',
         ephemeral: true,
       });
     }
