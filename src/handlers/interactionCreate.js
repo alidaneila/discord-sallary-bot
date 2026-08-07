@@ -7,6 +7,7 @@ const {
   ButtonStyle,
 } = require('discord.js');
 const config = require('../config');
+const { ChannelType } = require('discord.js');
 const { formatGold } = require('../utils/formatGold');
 const partyService = require('../services/partyService');
 const salaryService = require('../services/salaryService');
