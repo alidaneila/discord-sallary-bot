@@ -666,19 +666,31 @@ async function finalizeParty(interaction, run) {
   const salaryChannel = await interaction.client.channels.fetch(config.salaryChannelId);
   const thread = await salaryChannel.threads.create({
     name: run.title,
+    type: ChannelType.PrivateThread,
     autoArchiveDuration: 10080, // 7 hari
+    invitable: false, // cuma host/mod yang bisa nambahin orang lain ke thread, member biasa gak bisa invite sembarangan
     reason: `Salary thread untuk party run #${run.id}`,
   });
 
   salaryService.createSalaryThread(run.id, thread.id);
 
   const members = await resolveDisplayNames(interaction.guild, partyService.getActiveMembers(run.id));
+
+  // Tambahin semua member party + host (jaga-jaga kalau host gak ambil role manapun)
+  const memberIds = new Set(members.map((m) => m.user_id));
+  memberIds.add(run.host_id);
+  for (const userId of memberIds) {
+    try {
+      await thread.members.add(userId);
+    } catch (err) {
+      console.warn(`[finalizeParty] Gagal nambahin ${userId} ke thread:`, err.message);
+    }
+  }
+
   const { embed, components } = salaryService.computeSalaryView(partyService.getRun(run.id), members);
   const panelMessage = await thread.send({ embeds: [embed], components });
   salaryService.setPanelMessageId(run.id, panelMessage.id);
 
-  // Ping beneran ke semua member party (mention di embed TIDAK memicu notifikasi,
-  // jadi kirim pesan terpisah dengan mention di content biar semua kebagian notif).
   if (members.length) {
     const mentions = members.map((m) => `<@${m.user_id}>`).join(' ');
     await thread.send({
@@ -687,7 +699,6 @@ async function finalizeParty(interaction, run) {
     });
   }
 
-  // Hapus pesan panel party yang asli
   try {
     const partyChannel = await interaction.client.channels.fetch(run.channel_id);
     const partyMessage = await partyChannel.messages.fetch(run.panel_message_id);
@@ -695,6 +706,4 @@ async function finalizeParty(interaction, run) {
   } catch (err) {
     console.warn('[finalizeParty] Gagal hapus pesan party lama:', err.message);
   }
-
-  await interaction.editReply({ content: `✅ Party selesai. Salary thread dibuat: ${thread}` });
 }
