@@ -55,6 +55,30 @@ async function refreshSalaryPanel(client, guild, runId) {
   await salaryService.rebuildSalaryPanel(client, run, members);
 }
 
+async function refreshSalaryPanel(client, guild, runId) {
+  const run = partyService.getRun(runId);
+  const members = await resolveDisplayNames(guild, partyService.getActiveMembers(runId));
+  await salaryService.rebuildSalaryPanel(client, run, members);
+}
+
+// Kirim pesan thread salary buat nge-tag/notify yang sudah di bayar
+
+async function notifyPaidMembers(client, runId, userIds) {
+  if (!userIds?.length) return;
+  const salaryThread = salaryService.getSalaryThreadByRunId(runId);
+  if (!salaryThread?.thread_id) return;
+  try {
+    const thread = await client.channels.fetch(salaryThread.thread_id);
+    const mentions = userIds.map((id) => `<@${id}>`).join(' ');
+    await thread.send({
+      content: `💰 Gajimu sudah ditransfer, cek ya: ${mentions}`,
+      allowedMentions: { users: userIds },
+    });
+  } catch (err) {
+    console.warn('[notifyPaidMembers] Gagal kirim notifikasi mark paid:', err.message);
+  }
+}
+
 module.exports = async function interactionCreate(interaction) {
   try {
     if (interaction.isChatInputCommand()) {
@@ -520,6 +544,7 @@ async function handleSelect(interaction) {
         salaryService.markPaid(runId, interaction.values);
         await interaction.update({ content: '✅ Ditandai sudah dibayar.', components: [] });
         await refreshSalaryPanel(interaction.client, interaction.guild, runId);
+        await notifyPaidMembers(interaction.client, runId, interaction.values);
         return;
       }
       case 'removestamploanselect': {
