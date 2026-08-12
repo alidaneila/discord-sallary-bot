@@ -1,4 +1,7 @@
-const { SlashCommandBuilder } = require('discord.js');
+const {
+  SlashCommandBuilder,
+  MessageFlags,
+} = require('discord.js');
 const db = require('../database/db');
 const config = require('../config');
 
@@ -61,7 +64,7 @@ module.exports = {
 
     await interaction.reply({
       content: `✅ Item ditambahkan: **${itemName}** (${category}${klass ? ` · ${klass}` : ''} · ${stampCost} stamp)`,
-      ephemeral: true,
+      flags: MessageFlags.Ephemeral,
     });
   },
 };
