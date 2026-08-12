@@ -71,7 +71,7 @@ async function notifyPaidMembers(client, runId, userIds) {
     const thread = await client.channels.fetch(salaryThread.thread_id);
     const mentions = userIds.map((id) => `<@${id}>`).join(' ');
     await thread.send({
-      content: `💰 Gajimu sudah ditransfer, cek ya: ${mentions}`,
+      content: `💰 done, cek ya ${mentions}`,
       allowedMentions: { users: userIds },
     });
   } catch (err) {
@@ -707,7 +707,7 @@ async function finalizeParty(interaction, run) {
   if (members.length) {
     const mentions = members.map((m) => `<@${m.user_id}>`).join(' ');
     await thread.send({
-      content: `📢 ${mentions} — party udah selesai, cek pembagian gaji di atas ya!`,
+      content: `📢 ${mentions} — silahkan DROP IGN !! dan cek pembagiannya ya`,
       allowedMentions: { parse: ['users'] },
     });
   }
