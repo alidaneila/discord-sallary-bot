@@ -8,6 +8,8 @@ function required(name) {
   return value;
 }
 
+ownerAvatarUrl: process.env.OWNER_AVATAR_URL || null,
+
 module.exports = {
   token: required('DISCORD_TOKEN'),
   clientId: required('CLIENT_ID'),

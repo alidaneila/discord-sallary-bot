@@ -96,7 +96,11 @@ function buildSalaryEmbed({ run, accounting, members, lootEntries, goldDrops, st
 
   const idParts = [`Run ID: ${run.id}`];
   if (!calcResult.isFinal) idParts.push('Status: estimasi');
-  embed.setFooter({ text: idParts.join(' · ') });
+  const config = require('../config');
+embed.setFooter({
+  text: idParts.join(' · '),
+  iconURL: config.ownerAvatarUrl || undefined,
+});
 
   return embed;
 }

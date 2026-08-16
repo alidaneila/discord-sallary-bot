@@ -31,7 +31,11 @@ function buildPartyEmbed(run, requirements, members) {
     return embed;
   }
 
-  embed.setFooter({ text: 'role di bawah untuk join' });
+  const config = require('../config');
+embed.setFooter({
+  text: 'role di bawah untuk join',
+  iconURL: config.ownerAvatarUrl || undefined,
+});
 
   const lines = [];
   for (const req of requirements) {
