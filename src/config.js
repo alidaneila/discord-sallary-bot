@@ -8,8 +8,6 @@ function required(name) {
   return value;
 }
 
-ownerAvatarUrl: process.env.OWNER_AVATAR_URL || null,
-
 module.exports = {
   token: required('DISCORD_TOKEN'),
   clientId: required('CLIENT_ID'),
@@ -17,6 +15,7 @@ module.exports = {
   salaryChannelId: required('SALARY_CHANNEL_ID'),
   itemAdminUserId: process.env.ITEM_ADMIN_USER_ID || null, // Discord User ID yang boleh /setting item (khusus 1 orang)
   dbPath: process.env.DB_PATH || './data/bot.sqlite',
+  ownerAvatarUrl: process.env.OWNER_AVATAR_URL || null,
 
   // Aturan bisnis yang bisa diubah tanpa nyentuh logika
   stampUnitPrice: 5,       // harga 1 sealstamp dalam gold
